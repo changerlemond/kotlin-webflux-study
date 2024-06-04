@@ -14,5 +14,5 @@ spring:
   jpa:
     properties:
       jakarta.persistence.validation.mode: auto
-  server:
-    port: 8200
+server:
+  port: 8200
