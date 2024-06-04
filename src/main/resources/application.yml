@@ -16,3 +16,9 @@ spring:
       jakarta.persistence.validation.mode: auto
 server:
   port: 8200
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
