@@ -30,9 +30,12 @@ repositories {
 }
 
 dependencies {
+    // spring jpa
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     // webflux
     implementation("org.springframework.boot:spring-boot-starter-webflux")
+    // MongoDB Reactive
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb-reactive")
     // json
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     // reactor

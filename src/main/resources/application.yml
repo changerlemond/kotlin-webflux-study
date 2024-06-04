@@ -1,0 +1,18 @@
+spring:
+  data:
+    mongodb:
+      database: todo
+      pool:
+        max-size: 60
+        min-size: 30
+        max-connection-life-time: 300000
+        max-connection-idle-time: 60000
+        max-wait-time: 120000
+        maintenance-frequency: 2000
+        maintenance-initial-delay: 500
+      uri: mongodb://user:test@localhost:27017
+  jpa:
+    properties:
+      jakarta.persistence.validation.mode: auto
+  server:
+    port: 8200
