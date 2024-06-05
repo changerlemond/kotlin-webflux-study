@@ -1,4 +1,4 @@
-package com.study.webflux.entity.user
+package com.study.webflux.entity
 
 import com.study.webflux.common.BaseDocument
 import jakarta.persistence.Id
@@ -12,19 +12,19 @@ class User: BaseDocument() {
 
     @Id
     @Field("_id")
-    val id: ObjectId = ObjectId.get()
+    var id: ObjectId? = null
 
     @Field("status")
-    var status: String = ""
+    var status: String? = ""
 
     @Field("role")
-    var role: String = ""
+    var role: String? = ""
 
     @Field("email")
     var email: String = "";
 
     @Field("nickname")
-    var username: String? = "";
+    var nickname: String = "";
 
     @Field("password")
     var password: String = "";

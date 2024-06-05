@@ -11,6 +11,8 @@ plugins {
     kotlin("plugin.spring") version "1.9.24"
     // spring jpa plugin
     kotlin("plugin.jpa") version "1.9.24"
+    // kotlin annotation
+    kotlin("kapt") version "1.9.20"
 }
 
 group = "com.study"
@@ -54,6 +56,11 @@ dependencies {
     testImplementation("io.projectreactor:reactor-test")
     // junit test
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    // mapstruct
+    implementation("org.mapstruct:mapstruct:1.5.5.Final")
+    kapt("org.mapstruct:mapstruct-processor:1.5.2.Final")
+    // validation
+    implementation("org.springframework.boot:spring-boot-starter-validation")
 }
 
 // kotlin compiler
